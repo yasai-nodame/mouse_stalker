@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Mouse_Stalker",
+    "version": "1.0",
+    "permissions": ["activeTab"],
+    "content_scripts": [{
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+        ],
+        "js": [
+            "mouse_stalker.js"
+        ],
+        "css": [
+            "stalker.css"
+        ],
+        "run_at": "document_start"
+    }]
+}
